@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var slowDownLabel: UILabel!
     
     @IBAction func onStartMonitoringPressed(_ sender: Any) {
+        if(timer == nil){
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+         slowDownLabel.text = "\(timer!.timeInterval)"
+        }
     
     }
     
