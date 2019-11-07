@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B526F47D2C7246A3B6DC8E /* Pods_MarkingItus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45D8F10CF3A7970A2E5FA1 /* Pods_MarkingItus.framework */; };
 		CFB6D3EB237470A3005B3C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D3EA237470A3005B3C9F /* AppDelegate.swift */; };
 		CFB6D3ED237470A3005B3C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D3EC237470A3005B3C9F /* SceneDelegate.swift */; };
 		CFB6D3EF237470A3005B3C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D3EE237470A3005B3C9F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBC09C910C9D54E6B10D203 /* Pods-MarkingItus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkingItus.release.xcconfig"; path = "Target Support Files/Pods-MarkingItus/Pods-MarkingItus.release.xcconfig"; sourceTree = "<group>"; };
+		7AD22DB19A8B5A0B3E54E3CA /* Pods-MarkingItus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkingItus.debug.xcconfig"; path = "Target Support Files/Pods-MarkingItus/Pods-MarkingItus.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB6D3E7237470A3005B3C9F /* MarkingItus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkingItus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB6D3EA237470A3005B3C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB6D3EC237470A3005B3C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CFB6D3F3237470AB005B3C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB6D3F6237470AB005B3C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB6D3F8237470AB005B3C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE45D8F10CF3A7970A2E5FA1 /* Pods_MarkingItus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkingItus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B526F47D2C7246A3B6DC8E /* Pods_MarkingItus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DFF20B8BD48B7209CD4E800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AD22DB19A8B5A0B3E54E3CA /* Pods-MarkingItus.debug.xcconfig */,
+				0FBC09C910C9D54E6B10D203 /* Pods-MarkingItus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		327BCFC00212748FA7837AAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE45D8F10CF3A7970A2E5FA1 /* Pods_MarkingItus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFB6D3DE237470A3005B3C9F = {
 			isa = PBXGroup;
 			children = (
 				CFB6D3E9237470A3005B3C9F /* MarkingItus */,
 				CFB6D3E8237470A3005B3C9F /* Products */,
+				0DFF20B8BD48B7209CD4E800 /* Pods */,
+				327BCFC00212748FA7837AAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFB6D3FB237470AB005B3C9F /* Build configuration list for PBXNativeTarget "MarkingItus" */;
 			buildPhases = (
+				13354B05482D1E09A7B45F1B /* [CP] Check Pods Manifest.lock */,
 				CFB6D3E3237470A3005B3C9F /* Sources */,
 				CFB6D3E4237470A3005B3C9F /* Frameworks */,
 				CFB6D3E5237470A3005B3C9F /* Resources */,
+				22D42389D77735598DD6C15B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13354B05482D1E09A7B45F1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkingItus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22D42389D77735598DD6C15B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkingItus/Pods-MarkingItus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkingItus/Pods-MarkingItus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarkingItus/Pods-MarkingItus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFB6D3E3237470A3005B3C9F /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CFB6D3FC237470AB005B3C9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD22DB19A8B5A0B3E54E3CA /* Pods-MarkingItus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		CFB6D3FD237470AB005B3C9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBC09C910C9D54E6B10D203 /* Pods-MarkingItus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
