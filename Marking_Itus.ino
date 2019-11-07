@@ -46,6 +46,7 @@ int rainbowRemote(String command){
     while(millis() - startMillis < i*1000UL){
         // b.advanceRainbow(10,30);
          b.ledOn(1,200,200,200);
+         b.ledOn(12,200,200,200);
          b.ledOn(3,200,200,200);
          b.ledOn(4,200,200,200);
          b.ledOn(5,200,200,200);
