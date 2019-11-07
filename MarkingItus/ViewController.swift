@@ -25,11 +25,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var displaytimerLabel: UILabel!
     
+    @IBOutlet weak var slowDownLabel: UILabel!
+    
     @IBAction func onStartMonitoringPressed(_ sender: Any) {
         
             if(timer == nil){
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+
         }
+        
+    }
+    @IBAction func onSliderChanged(_ sender: Any) {
         
     }
     
@@ -47,7 +53,15 @@ class ViewController: UIViewController {
                 {
                     timer!.invalidate()
                     timer = nil
+        
+//                    let alertController = UIAlertController(title: "Time Up!", message: "Your time is up!", preferredStyle: .alert)
+//
+//                    let restartAction = UIAlertAction(title: "Restart", style: .default, handler: nil)
+//                        alertController.addAction(restartAction)
+//
+//                    self.ViewController(alertController, animated: true, completion: nil)
                 }
+                print("Time is up")
             }
         }
     
