@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		CFB6D3F2237470A3005B3C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB6D3F0237470A3005B3C9F /* Main.storyboard */; };
 		CFB6D3F4237470AB005B3C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB6D3F3237470AB005B3C9F /* Assets.xcassets */; };
 		CFB6D3F7237470AB005B3C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB6D3F5237470AB005B3C9F /* LaunchScreen.storyboard */; };
+		CFB6D3FF23749325005B3C9F /* Marking_Itus.ino in Resources */ = {isa = PBXBuildFile; fileRef = CFB6D3FE23749325005B3C9F /* Marking_Itus.ino */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CFB6D3F3237470AB005B3C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB6D3F6237470AB005B3C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB6D3F8237470AB005B3C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB6D3FE23749325005B3C9F /* Marking_Itus.ino */ = {isa = PBXFileReference; lastKnownFileType = text; path = Marking_Itus.ino; sourceTree = "<group>"; };
 		EE45D8F10CF3A7970A2E5FA1 /* Pods_MarkingItus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkingItus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				7AD22DB19A8B5A0B3E54E3CA /* Pods-MarkingItus.debug.xcconfig */,
 				0FBC09C910C9D54E6B10D203 /* Pods-MarkingItus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				CFB6D3F3237470AB005B3C9F /* Assets.xcassets */,
 				CFB6D3F5237470AB005B3C9F /* LaunchScreen.storyboard */,
 				CFB6D3F8237470AB005B3C9F /* Info.plist */,
+				CFB6D3FE23749325005B3C9F /* Marking_Itus.ino */,
 			);
 			path = MarkingItus;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB6D3F7237470AB005B3C9F /* LaunchScreen.storyboard in Resources */,
+				CFB6D3FF23749325005B3C9F /* Marking_Itus.ino in Resources */,
 				CFB6D3F4237470AB005B3C9F /* Assets.xcassets in Resources */,
 				CFB6D3F2237470A3005B3C9F /* Main.storyboard in Resources */,
 			);

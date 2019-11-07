@@ -25,18 +25,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var displaytimerLabel: UILabel!
     
+    @IBOutlet weak var sliderLabel: UISlider!
     @IBOutlet weak var slowDownLabel: UILabel!
     
     @IBAction func onStartMonitoringPressed(_ sender: Any) {
-        
-            if(timer == nil){
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
-
-        }
-        
-    }
-    @IBAction func onSliderChanged(_ sender: Any) {
-        
+    
     }
     
     @objc func onUpdateTimer() -> Void
@@ -53,18 +46,13 @@ class ViewController: UIViewController {
                 {
                     timer!.invalidate()
                     timer = nil
-        
-//                    let alertController = UIAlertController(title: "Time Up!", message: "Your time is up!", preferredStyle: .alert)
-//
-//                    let restartAction = UIAlertAction(title: "Restart", style: .default, handler: nil)
-//                        alertController.addAction(restartAction)
-//
-//                    self.ViewController(alertController, animated: true, completion: nil)
+                           
                 }
                 print("Time is up")
             }
         }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -88,7 +76,6 @@ class ViewController: UIViewController {
 
                    }
                } // end login
-        
     }
     
     func getDeviceFromCloud() {
@@ -109,10 +96,56 @@ class ViewController: UIViewController {
             
         } // end getDevice()
     }
+    
+    @IBAction func onSliderChanged(_ sender: UISlider) {
+        let currentValue = Int(sender.value)
+        
+        if(currentValue == 0){
+           if(timer == nil){
+               timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+            slowDownLabel.text = "\(timer!.timeInterval)"
+           }
+        }
+            if(currentValue > 0 || currentValue <= 20){
+                if(timer == nil){
+                    timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+                 slowDownLabel.text = "\(timer!.timeInterval)"
+                }
+             }
+
+             else if(currentValue > 20 || currentValue <= 40){
+                if(timer == nil){
+                    timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+                 slowDownLabel.text = "\(timer!.timeInterval)"
+
+                }
+            }
+             else if(currentValue > 40 || currentValue <= 60){
+                 if(timer == nil){
+                     timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+                 slowDownLabel.text = "\(timer!.timeInterval)"
+                 }
+             }
+             else if(currentValue > 60 || currentValue <= 80){
+                     if(timer == nil){
+                         timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+                 slowDownLabel.text = "\(timer!.timeInterval)"
+
+                 }
+             }
+             else if(currentValue > 80 || currentValue <= 500){
+                         if(timer == nil){
+                             timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(onUpdateTimer), userInfo: nil, repeats: true)
+                 slowDownLabel.text = "\(timer!.timeInterval)"
+
+                 }
+             }
+
+
+        
+                           
+       }
 
     
-    
-    
-    
+
 }
-
